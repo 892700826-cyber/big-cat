@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>大法官游戏厅</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: #0a0a12;
+  color: #fff;
+  font-family: 'Courier New', monospace;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+h1 {
+  font-size: 2rem;
+  text-shadow: 0 0 20px #0ff, 0 0 40px #0ff;
+  margin-bottom: 10px;
+  color: #0ff;
+}
+.sub {
+  color: #666;
+  margin-bottom: 40px;
+  font-size: 0.9rem;
+}
+.games {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 360px;
+}
+.game-card {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  border: 1px solid #333;
+  border-radius: 16px;
+  padding: 24px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none;
+  color: #fff;
+}
+.game-card:hover, .game-card:active {
+  border-color: #0ff;
+  box-shadow: 0 0 30px rgba(0,255,255,0.2);
+  transform: scale(1.02);
+}
+.game-card .icon { font-size: 3rem; margin-bottom: 10px; }
+.game-card h2 { font-size: 1.3rem; margin-bottom: 6px; }
+.game-card p { color: #888; font-size: 0.85rem; }
+.game-card .controls {
+  margin-top: 10px;
+  font-size: 0.75rem;
+  color: #555;
+  background: #0a0a18;
+  padding: 8px 12px;
+  border-radius: 8px;
+  display: inline-block;
+}
+.badge {
+  display: inline-block;
+  background: #f44;
+  color: #fff;
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border-radius: 10px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+.footer {
+  margin-top: 40px;
+  color: #333;
+  font-size: 0.75rem;
+}
+</style>
+</head>
+<body>
+  <h1>🎮 大法官游戏厅</h1>
+  <p class="sub">手机也能玩 · WASD + J 操作</p>
+
+  <div class="games">
+    <a class="game-card" href="/contra.html">
+      <div class="icon">🔥</div>
+      <h2>魂斗罗 <span class="badge">NEW</span></h2>
+      <p>经典横版射击！打倒敌人、收集S弹、通关！</p>
+      <div class="controls">W跳 S蹲 A/D左右 J射击</div>
+    </a>
+
+    <a class="game-card" href="/snake.html">
+      <div class="icon">🐍</div>
+      <h2>贪吃蛇</h2>
+      <p>经典贪吃蛇，越吃越快，挑战最高分！</p>
+      <div class="controls">W/A/S/D 方向 J暂停/重开</div>
+    </a>
+  </div>
+
+  <div class="footer">大法官出品 · 要啥自行车</div>
+</body>
+</html>
